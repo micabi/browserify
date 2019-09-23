@@ -23,3 +23,23 @@ npm i -D @babel/preset-env
 npm i -D babel-core
 
 npm i -D babel-preset-2015
+
+
+---
+
+## 忘れがち
+
+.babelrc
+
+これがないとimport/exportを解釈してくれない。
+
+## 蛇足
+
+.quokka
+
+npm i -D jsdom-quokka-plugin 用の設定ファイル
+
+quokkaでブラウザーDOMを解釈してリアルタイムにエラーを検出してくれる。
+
+ただし、import/exportにはPro(有償)にしてないと対応してない。残念。
+

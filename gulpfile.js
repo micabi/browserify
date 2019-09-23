@@ -10,3 +10,7 @@ gulp.task('build', function(){
   .pipe(source('app.js'))
   .pipe(gulp.dest('./js'));
 });
+
+gulp.task('watch', function(){
+  return gulp.watch('./js/main.js', gulp.parallel('build'));
+});
